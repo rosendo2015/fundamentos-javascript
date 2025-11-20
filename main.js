@@ -1,5 +1,6 @@
 /*fundamentos javascript*/
 import * as calc from "./fundamentos.js";
+import * as executOrder from "./ordemDeExecução.js";
    
     const adress1 = {
       street: "Av. Bresil",
@@ -42,4 +43,34 @@ const interval = setInterval(() => {
     clearInterval(interval);
     console.log("Fim!");
   }
-}, 1000);
+}, 500);
+
+
+function asyncFunction(){
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const isSuccess = false;
+      if(isSuccess){
+        resolve("Async Function Resolved");
+      } else {
+        reject("Async Function Rejected");
+      }
+    }, 6000);
+  });
+}
+asyncFunction()
+  .then(response => console.log(response))
+  .catch(error => console.log(error))
+  .finally(() => console.log("Async operation completed"));
+
+async function fetch(){
+  try{
+    const response = await asyncFunction();
+    console.log(response);
+  } catch(error){
+    console.log(error);
+  } finally{
+    console.log("Fetch operation completed");
+  }
+}
+fetch();
