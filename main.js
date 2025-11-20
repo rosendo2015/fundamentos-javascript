@@ -32,3 +32,14 @@ console.log("Multiply: " + calc.multiply(4, 10));
 setTimeout(()=>{
   console.log("Olá, Rosendo....");  
 },3000)
+
+let value = 10;
+
+const interval = setInterval(() => {
+  value--;
+  console.log(value);
+  if(value === 0){
+    clearInterval(interval);
+    console.log("Fim!");
+  }
+}, 1000);
