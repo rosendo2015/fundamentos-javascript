@@ -10,4 +10,3 @@ export function ordemDeExecução(){
     console.log(5);
 
 }
-ordemDeExecução();
