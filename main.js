@@ -3,6 +3,7 @@ import * as calc from "./fundamentos.js";
 import * as executOrder from "./ordemDeExecução.js";
 import * as funcAsync from "./functionAsync.js";
 import dayjs  from "./data.js";
+import "./requisicoesDeAPIs.js";
  
     const adress1 = {
       street: "Av. Bresil",
