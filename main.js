@@ -4,7 +4,7 @@ import * as executOrder from "./ordemDeExecução.js";
 import * as funcAsync from "./functionAsync.js";
 import dayjs  from "./data.js";
 import "./requisicoesDeAPIs.js";
- 
+/* 
     const adress1 = {
       street: "Av. Bresil",
       number: 20
@@ -31,3 +31,5 @@ console.log("Multiply: " + calc.multiply(4, 10));
 
 funcAsync.fetch();
 executOrder.ordemDeExecução();
+
+*/
